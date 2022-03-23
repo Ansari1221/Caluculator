@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./asset/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b03b487f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="display-wrapper">
+            <p class="operation" id="display">00</p>
+        </div>
+        <div class="btn-wrapper">
+            <button class="item clear" onclick="clearDisplay()">CE</button>
+            <button class="item back" onclick="clearLast()"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <button class="item" onclick="appendOPerator('+')">+</button>
+            <button class="item" onclick="appendOPerator('-')">-</button>
+            <button class="item" onclick="appendNumber('1')">1</button>
+            <button class="item" onclick="appendNumber('2')">2</button>
+            <button class="item" onclick="appendNumber('3')">3</button>
+            <button class="item" onclick="appendOPerator('x')">x</button>
+            <button class="item" onclick="appendNumber('4')">4</button>
+            <button class="item" onclick="appendNumber('5')">5</button>
+            <button class="item" onclick="appendNumber('6')">6</button>
+            <button class="item" onclick="appendOPerator('/')">/</button>
+            <button class="item" onclick="appendNumber('7')">7</button>
+            <button class="item" onclick="appendNumber('8')">8</button>
+            <button class="item" onclick="appendNumber('9')">9</button>
+            <button class="item equal" onclick="performOperation()">=</button>
+            <button class="item" onclick="appendNumber('00')">00</button>
+            <button class="item" onclick="appendNumber('0')">0</button>
+            <button class="item" onclick="appendNumber('.')">.</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
